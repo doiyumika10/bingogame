@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ビンゴカード</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="headerbox">
+            <img class="c-icon" src="images/cheese.png">
+            <h1><img src="images/logo.png" alt="ビンゴゲーム"></h1>
+            <img class="c-icon" src="images/cheese.png">
+        </div>
+    </header>
+    <main>
+        <div class="btnwrapper">
+            <p><button id="make" class="c-btn c-btn-shadow" name="make" action="#">ビンゴカード作成
+                </button></p>
+        </div>
+        <div id="cardlayout">
+            <aside id="aside1">
+                <img class="cheese1" src="images/food_cheese_yellow1.png">
+                <p class="blank"></p>
+                <img class="cheese2" src="images/food_cheese_yellow2.png">
+            </aside>
+            <table id="alreadyMentioned">
+                <thead>
+                    <th>B</th>
+                    <th>I</th>
+                    <th>N</th>
+                    <th>G</th>
+                    <th>O</th>
+                </thead>
+                <tbody id="body"></tbody>
+            </table>
+            <aside id="aside2">
+                <p class="blank"></p>
+                <img class="cheese2" src="images/food_cheese_yellow2.png">
+                <p class="blank"></p>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p><small>&copy;2021 LaLaBINGO</small></p>
+    </footer>
+    <div id="cardicon" class="menu-trigger">
+       <span></span>
+       <span></span>
+       <span></span>
+    </div>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="card(jquery).html"><span>ビンゴカード</span> <i class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="about.html">説明</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <!--    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>-->
+    <script src="js/card.js"> </script>
+</body>
+
+</html>
